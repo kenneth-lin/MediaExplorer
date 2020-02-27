@@ -2,16 +2,14 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href='/style/index.css'/>
-    <script>
-        function ScrollToTop(){
-            document.body.scrollTop = 0;
-        }
-    </script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
 </head>
 
 <body>
     <h1>Path: <%=data.pathQ%> </h3>
         <div class="top" onclick="javscript:ScrollToTop()">top</div>
+        <div class="animation" onclick="javscript:openAnimation()" at="/?slider=1&index=<%=data.index%>&path=<%=data.pathQ%>">ppt</div>
         <div style="height: 110px;"><a class="back" href="/?index=<%=data.index%>&path=<%=data.pathBack%>">回到上一级</a>
         </div>
         <% for(var i in data.folders){ %>

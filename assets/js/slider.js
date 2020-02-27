@@ -67,10 +67,17 @@
         }).eq(this.nowIndex).css({
             display: 'block',
         })
-        $('.imgList li a, .imgList li a img', this.wrap).css({
+        $('.imgList li a').css({
             display: 'inline-block',
             width: this.width,
             height: this.height,
+            'text-align': 'center'
+        })
+        $('.imgList li a img', this.wrap).css({
+            display: 'inline-block',
+            height: '100%',
+            width: '100%',
+            'object-fit': 'contain'
         });
         $('.left-btn, .right-btn', this.wrap).css({
             width: this.btnWidth,

@@ -13,11 +13,13 @@
 </head>
 
 <body>
-    <h1>Path: <%=data.pathQ%> </h3>
-        <div class="top" onclick="javscript:ScrollToTop()">top</div>
-        <div style="height: 110px;"><a class="back" href="/?index=<%=data.index%>&path=<%=data.pathBack%>">回到上一级</a>
+    <h1 style="display:none">Path: <%=data.pathQ%> </h3>
+        <div class="top" style="display:none" onclick="javscript:ScrollToTop()">top</div>
+        <div style="height: 110px;display:none"><a class="back" href="/?index=<%=data.index%>&path=<%=data.pathBack%>">回到上一级</a>
         </div>
-        <div class='demo'></div>
+        <div id='contain'>
+            <div class='demo'></div>
+        </div>
         <div id='data'>
             <% for(var i in data.images){ %>
             <div class="imdata" imgurl="<%=data.images[i]%>"></div>
