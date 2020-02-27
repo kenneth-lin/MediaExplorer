@@ -1,0 +1,26 @@
+{
+  "name": "mediaexplorer",
+  "version": "1.0.0",
+  "description": "\"# MediaExplorer\"",
+  "publicFolder": ["AA"],
+  "port": "3080",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenneth-lin/MediaExplorer.git"
+  },
+  "author": "Kenneth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenneth-lin/MediaExplorer/issues"
+  },
+  "homepage": "https://github.com/kenneth-lin/MediaExplorer#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}

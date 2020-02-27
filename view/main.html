@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href='/style/index.css'/>
+    <script>
+        function ScrollToTop(){
+            document.body.scrollTop = 0;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Path: <%=data.pathQ%> </h3>
+        <div class="top" onclick="javscript:ScrollToTop()">top</div>
+        <div style="height: 110px;"><a class="back" href="/?index=<%=data.index%>&path=<%=data.pathBack%>">回到上一级</a>
+        </div>
+        <% for(var i in data.folders){ %>
+        <div class="box">
+            <a class="folder" href="/?index=<%=data.index%>&path=<%=data.folders[i]%>">
+                <img class="folder" src='/images/folder.jpg'>
+                <span><%=data.folders[i].substring(data.folders[i].lastIndexOf('/')+1,data.folders[i].length)%></span>
+            </a>
+        </div>
+        <%}%>
+<% for(var i in data.images){ %>
+        <div class="box">
+            <img class="pre" src="<%=data.images[i]%>"></img>
+        </div>
+        <%}%>
+<% for(var i in data.videos){ %>
+        <div class="box videoBox">
+            <span><%=data.videos[i].substring(data.videos[i].lastIndexOf('/')+1,data.videos[i].length)%></span>
+            <video class="pre" preload="meta" src="<%=data.videos[i]%>" controls="controls"></video>
+        </div>
+        <%}%>
+</body>
+</html>
