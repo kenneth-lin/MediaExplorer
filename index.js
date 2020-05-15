@@ -9,8 +9,8 @@ app.set('views', __dirname + '/view');
 app.engine('.html', ejs.__express);
 app.set('view engine', 'html');
 
-let publicFolder = config.publicFolder
-let port = config.port
+var publicFolder = config.publicFolder
+var port = config.port
 app.use(express.static('assets'));
 for (var i in publicFolder) {
     app.use(express.static(publicFolder[i]))
