@@ -2,7 +2,7 @@
   "name": "mediaexplorer",
   "version": "1.0.0",
   "description": "\"# MediaExplorer\"",
-  "publicFolder": ["AA"],
+  "publicFolder": ["/root/nodejs/picture"],
   "port": "3080",
   "main": "index.js",
   "scripts": {
